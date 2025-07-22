@@ -3,10 +3,11 @@ package com.project.manufacturingorder.domain.model;
 import java.util.UUID;
 
 public class ManufacturingOrder {
-    private final ManufacturingOrderId id = new ManufacturingOrderId(UUID.randomUUID());
+    private final ManufacturingOrderId id;
     private ManufacturingOrderStatus status;
 
     public ManufacturingOrder(ManufacturingOrderId id, ManufacturingOrderStatus status) {
+        this.id = id;
         this.status = status;
     }
 
