@@ -24,7 +24,7 @@ public class ManufacturingOrderRestController {
     }
 
     @PatchMapping("/{id}/status")
-    public ResponseEntity<Void> changeStatus(@PathVariable UUID id, @RequestBody ChangeStatusDto dto) {
+    public ResponseEntity<Void> changeStatus(@PathVariable("id") UUID id, @RequestBody ChangeStatusDto dto) {
         changeStatusUseCase.changeStatus(new ChangeManufacturingOrderStatusCommand(id, dto.status()));
         return ResponseEntity.noContent().build();
     }
