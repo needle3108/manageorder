@@ -5,9 +5,11 @@ import com.project.manufacturingorder.application.mapper.ManufacturingOrderMappe
 import com.project.manufacturingorder.application.port.in.CreateManufacturingOrderApplicationPort;
 import com.project.manufacturingorder.domain.model.ManufacturingOrder;
 import com.project.manufacturingorder.domain.port.out.ManufacturingOrderRepositoryPort;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Service
 public class ManufacturingOrderApplicationService implements CreateManufacturingOrderApplicationPort {
     private final ManufacturingOrderRepositoryPort repository;
     private final ManufacturingOrderMapper mapper;

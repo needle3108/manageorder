@@ -10,6 +10,10 @@ public class ManufacturingOrder {
         this.status = status;
     }
 
+    public void changeStatus(ManufacturingOrderStatus newStatus) {
+        this.status = newStatus;
+    }
+
     public ManufacturingOrderId getId() { return id; }
     public ManufacturingOrderStatus getStatus() { return status; }
 }
