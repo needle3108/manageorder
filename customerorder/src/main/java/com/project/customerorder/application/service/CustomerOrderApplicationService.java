@@ -5,9 +5,11 @@ import com.project.customerorder.application.mapper.CustomerOrderMapper;
 import com.project.customerorder.application.port.in.CreateCustomerOrderApplicationPort;
 import com.project.customerorder.domain.model.*;
 import com.project.customerorder.domain.port.out.CustomerOrderRepositoryPort;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Service
 public class CustomerOrderApplicationService implements CreateCustomerOrderApplicationPort {
     private final CustomerOrderRepositoryPort repository;
     private final CustomerOrderMapper mapper;
