@@ -2,7 +2,9 @@ package com.project.manufacturingorder.domain.service;
 
 import com.project.manufacturingorder.domain.model.ManufacturingOrder;
 import com.project.manufacturingorder.domain.model.ManufacturingOrderStatus;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ManufacturingOrderDomainService {
     public void validateStatusChange(ManufacturingOrder manufacturingOrder, ManufacturingOrderStatus newStatus) {
         if (manufacturingOrder.getStatus() == ManufacturingOrderStatus.COMPLETED && newStatus != ManufacturingOrderStatus.COMPLETED) {
