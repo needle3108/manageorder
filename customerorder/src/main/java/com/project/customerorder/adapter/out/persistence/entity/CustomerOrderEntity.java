@@ -3,9 +3,7 @@ package com.project.customerorder.adapter.out.persistence.entity;
 import com.project.customerorder.domain.model.CustomerOrderStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.util.List;
 import java.util.UUID;
@@ -14,8 +12,6 @@ import java.util.UUID;
 @Table(name = "customer_order")
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 public class CustomerOrderEntity {
     @Id
     @Column(columnDefinition = "UUID", updatable = false, nullable = false)

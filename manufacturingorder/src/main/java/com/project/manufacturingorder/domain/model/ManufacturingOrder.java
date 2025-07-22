@@ -6,7 +6,7 @@ public class ManufacturingOrder {
     private final ManufacturingOrderId id = new ManufacturingOrderId(UUID.randomUUID());
     private ManufacturingOrderStatus status;
 
-    public ManufacturingOrder(ManufacturingOrderStatus status) {
+    public ManufacturingOrder(ManufacturingOrderId id, ManufacturingOrderStatus status) {
         this.status = status;
     }
 
