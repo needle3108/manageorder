@@ -1,8 +1,8 @@
 package com.project.customerorder.adapter.out.persistence.mapper;
 
 import com.project.customerorder.adapter.config.MapStructConfig;
-import com.project.customerorder.adapter.out.persistence.entity.CustomerOrderEntity;
-import com.project.customerorder.adapter.out.persistence.entity.OrderLineEntity;
+import com.project.customerorder.domain.model.CustomerOrderEntity;
+import com.project.customerorder.domain.model.OrderLineEntity;
 import com.project.customerorder.domain.model.CustomerOrder;
 import com.project.customerorder.domain.model.OrderLine;
 import org.mapstruct.Mapper;

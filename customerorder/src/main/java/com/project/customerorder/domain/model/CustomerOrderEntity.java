@@ -1,6 +1,5 @@
-package com.project.customerorder.adapter.out.persistence.entity;
+package com.project.customerorder.domain.model;
 
-import com.project.customerorder.domain.model.CustomerOrderStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,5 @@
-package com.project.manufacturingorder.adapter.out.persistence.entity;
+package com.project.manufacturingorder.domain.model;
 
-import com.project.manufacturingorder.domain.model.ManufacturingOrderStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

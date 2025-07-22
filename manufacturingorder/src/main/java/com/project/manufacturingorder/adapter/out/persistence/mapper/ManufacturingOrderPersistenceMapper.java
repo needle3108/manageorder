@@ -1,7 +1,7 @@
 package com.project.manufacturingorder.adapter.out.persistence.mapper;
 
 import com.project.manufacturingorder.adapter.config.MapStructConfig;
-import com.project.manufacturingorder.adapter.out.persistence.entity.ManufacturingOrderEntity;
+import com.project.manufacturingorder.domain.model.ManufacturingOrderEntity;
 import com.project.manufacturingorder.domain.model.ManufacturingOrder;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
