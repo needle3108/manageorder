@@ -27,3 +27,7 @@ CREATE TABLE IF NOT EXISTS manufacturing_order (
     id UUID PRIMARY KEY,
     status VARCHAR(50) NOT NULL
     );
+
+INSERT INTO manufacturing_order (id, status) VALUES
+('b1ee0b12-1d44-4640-850f-319759696824', 'CREATED'),
+('b662d3ef-0b84-43c3-98f9-8411f2ccfb26', 'CONFIRMED');

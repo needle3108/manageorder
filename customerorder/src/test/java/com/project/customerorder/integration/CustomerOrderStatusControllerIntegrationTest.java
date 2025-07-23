@@ -16,7 +16,7 @@ public class CustomerOrderStatusControllerIntegrationTest {
 
     @Test
     void shouldReturnStatusFromManufacturingOrder() {
-        UUID orderId = UUID.fromString("bdd93923-7b90-4dbf-be6a-c9f7f653ace8");
+        UUID orderId = UUID.fromString("b1ee0b12-1d44-4640-850f-319759696824");
 
         webClient.get()
                 .uri("/api/orders/{id}/track", orderId)
